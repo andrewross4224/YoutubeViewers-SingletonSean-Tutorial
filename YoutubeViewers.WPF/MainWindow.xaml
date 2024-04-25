@@ -7,7 +7,14 @@
         mc:Ignorable="d"
         Title="Youtube Viewers" Height="450" Width="800"
         FontSize="14">
-    <Grid Margin="25">
-        <views:YoutubeViewersView/>
-    </Grid>
+    <ScrollViewer
+        VerticalScrollBarVisibility="Auto"
+        HorizontalScrollBarVisibility="Auto">
+        <StackPanel
+            Margin="25">
+            <views:AddYoutubeViewerView />
+            <views:EditYoutubeViewerView />
+            <!--<views:YoutubeViewersView />-->
+        </StackPanel>
+    </ScrollViewer>
 </Window>
