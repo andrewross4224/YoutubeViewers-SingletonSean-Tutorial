@@ -22,9 +22,14 @@ namespace YoutubeViewers.WPF.Stores
 				CurrentViewModelChanged?.Invoke();
 			}
 		}
+        internal void Close()
+        {
+			CurrentViewModel = null;
+        }
 
 		public bool IsOpen => _currentViewModel != null;
 
 		public event Action CurrentViewModelChanged;
-	}
+
+    }
 }

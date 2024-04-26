@@ -21,6 +21,6 @@
             Text="Add Youtube Viewer" />
 
         <components:YoutubeViewerDetailsForm Grid.Row="1"
-            Margin="0 30 0 0" />
+            Margin="0 30 0 0" DataContext="{Binding YoutubeViewerDetailsFormViewModel}" />
     </Grid>
 </UserControl>

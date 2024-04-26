@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using YoutubeViewers.WPF.Commands;
 using YoutubeViewers.WPF.Stores;
 
 namespace YoutubeViewers.WPF.ViewModels
@@ -14,11 +15,13 @@ namespace YoutubeViewers.WPF.ViewModels
         public YoutubeViewersDetailsViewModel YoutubeViewersDetailsViewModel { get; }
         public ICommand AddYoutubeViewersCommand { get; }
 
-        public YoutubeViewersViewModel(SelectedYoutubeViewerStore _selectedYoutubeViewerStore)
+        public YoutubeViewersViewModel(SelectedYoutubeViewerStore _selectedYoutubeViewerStore, ModalNavigationStore modalNavigationStore)
         {
-            YoutubeViewersListingViewModel = new YoutubeViewersListingViewModel(_selectedYoutubeViewerStore);
+            YoutubeViewersListingViewModel = new YoutubeViewersListingViewModel(_selectedYoutubeViewerStore, modalNavigationStore);
 
             YoutubeViewersDetailsViewModel = new YoutubeViewersDetailsViewModel(_selectedYoutubeViewerStore);
+
+            AddYoutubeViewersCommand = new OpenAddYoutubeViewerCommand(modalNavigationStore);
         }
     }
 }
