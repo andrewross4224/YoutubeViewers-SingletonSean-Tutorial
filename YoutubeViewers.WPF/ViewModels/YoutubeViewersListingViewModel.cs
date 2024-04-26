@@ -9,7 +9,7 @@ using YoutubeViewers.WPF.Stores;
 
 namespace YoutubeViewers.WPF.ViewModels
 {
-    class YoutubeViewersListingViewModel : ViewModelBase
+    public class YoutubeViewersListingViewModel : ViewModelBase
     {
         private readonly ObservableCollection<YoutubeViewersListingItemViewModel> _youtubeViewersListingItemViewModels;
         private readonly SelectedYoutubeViewerStore _selectedYoutubeViewerStore;

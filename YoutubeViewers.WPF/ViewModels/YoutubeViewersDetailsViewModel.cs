@@ -8,7 +8,7 @@ using YoutubeViewers.WPF.Stores;
 
 namespace YoutubeViewers.WPF.ViewModels
 {
-    class YoutubeViewersDetailsViewModel : ViewModelBase
+    public class YoutubeViewersDetailsViewModel : ViewModelBase
     {
         private readonly SelectedYoutubeViewerStore _selectedYoutubeViewerStore;
 

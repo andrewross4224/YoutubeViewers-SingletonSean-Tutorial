@@ -7,7 +7,7 @@ using YoutubeViewers.WPF.Models;
 
 namespace YoutubeViewers.WPF.Stores
 {
-    internal class SelectedYoutubeViewerStore
+    public class SelectedYoutubeViewerStore
     {
         private YoutubeViewer _selectedYoutubeViewer;
 

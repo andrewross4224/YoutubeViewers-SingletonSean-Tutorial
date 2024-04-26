@@ -10,11 +10,9 @@
     <ScrollViewer
         VerticalScrollBarVisibility="Auto"
         HorizontalScrollBarVisibility="Auto">
-        <StackPanel
+        <Grid
             Margin="25">
-            <views:AddYoutubeViewerView />
-            <views:EditYoutubeViewerView />
-            <!--<views:YoutubeViewersView />-->
-        </StackPanel>
+            <views:YoutubeViewersView DataContext="{Binding YoutubeViewersViewModel}"/>
+        </Grid>
     </ScrollViewer>
 </Window>
